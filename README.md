@@ -8,7 +8,15 @@ A machine learning-based web application that predicts a potential disease from 
 
 The AI-Based Medical Diagnosis System combines a trained machine learning model with symptom-based filtering and AI-generated guidance.
 
-Users select their symptoms through a Streamlit interface. The system processes the selected symptoms, generates disease predictions using a trained neural network model, applies Jaccard-style symptom matching to improve candidate filtering and ranking, and then uses the Groq API to generate structured informational guidance.
+Users select their symptoms through a Streamlit interface. The system processes the selected symptoms, generates disease predictions using a trained neural network model, applies symptom matching to improve candidate filtering and ranking, and then uses the Groq API to generate structured informational guidance.
+
+## Application Screenshots
+
+### Main Interface & Prediction
+![Main Interface](screenshots/main-ui.png)
+
+### AI-Generated Guidance
+![AI Guidance](screenshots/ai-guidance.png)
 
 ## Key Features
 
@@ -69,32 +77,25 @@ The generated response contains:
 * Diet suggestions
 * Lifestyle suggestions
 
-The application also includes fallback content to maintain a complete response if the generated AI output does not satisfy the required structure.
+The application also includes fallback content to maintain a complete response if the AI-generated output does not satisfy the required structure.
 
 ## Technologies Used
 
 **Languages & Frameworks**
-
 * Python
 * Streamlit
 
-**Machine Learning**
-
+**Machine Learning & AI**
 * TensorFlow / Keras
 * NumPy
 * Scikit-learn
-
-**AI**
-
 * Groq API
 
 **Data & Storage**
-
 * Pandas
 * Pickle
 
 **Development Tools**
-
 * Git
 * GitHub
 * Python-dotenv
@@ -107,6 +108,10 @@ AI-Based-Medical-Diagnosis-System/
 ├── app.py
 ├── ui.py
 ├── .gitignore
+│
+├── screenshots/
+│   ├── main-ui.png
+│   └── ai-guidance.png
 │
 └── model/
     ├── columns.pkl
